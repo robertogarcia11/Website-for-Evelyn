@@ -1,0 +1,59 @@
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    font-size: 65.5%;
+}
+body {
+    font-size: 2rem;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #a273ec;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background: pink;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-toggler div{
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #a273ec;
+}
+.nav-toggler {
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .nav-toggler {
+        display: block;
+    }
+    .navbar-menu {
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        background: pink;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition:  0.5s ease-in;
+    }
+}
+.nav-active {
+    transform: translateX(0);
+}
