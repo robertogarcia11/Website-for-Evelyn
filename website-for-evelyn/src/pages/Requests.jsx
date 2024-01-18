@@ -4,8 +4,9 @@ import NavBar from '../nav/NavBar';
 function Requests() {
 
     return (
-        <div>Requests
+        <div>
             <NavBar />
+            <h1>Requests</h1>
         </div>
 
     )

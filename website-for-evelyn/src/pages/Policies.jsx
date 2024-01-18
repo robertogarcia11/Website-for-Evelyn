@@ -4,8 +4,9 @@ import NavBar from '../nav/NavBar';
 function Policies() {
 
     return (
-        <div>Policies
+        <div>
             <NavBar />
+            <h1>Policies</h1>
 
         </div>
 

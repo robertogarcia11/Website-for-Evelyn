@@ -4,8 +4,9 @@ import NavBar from '../nav/NavBar';
 function Socials() {
 
     return (
-        <div>Socials
+        <div>
             <NavBar />
+            <h1>Socials</h1>
         </div>
 
     )

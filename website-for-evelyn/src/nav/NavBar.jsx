@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import "../styles/NavBar.css";
+import flower from '../images/flower.png'
+
 
 function NavBar() {
 
@@ -15,7 +17,8 @@ function NavBar() {
         <nav className="nav">
             
             <a href="#" className="nav-logo">
-                <img src='src/images/flower.png' alt="logo" width="150" heigh="150"/>
+                <img src={flower} alt="flower" width="150" heigh="150"/>
+
             </a>
 
             <ul className={active}>
